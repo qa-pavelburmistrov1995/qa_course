@@ -5,5 +5,5 @@ PreConditions- На десктопе открыт браузер Google Chrome C
 Steps to Reproduce- 1.Открыть страницу http://test.it-online-school.ru/ .
                     2.Нажать на кнопку "Меню"в левой части экрана .	
 Result - Показывает ошибку Error 404.
-Expected Result - Открывается страница "Меню".
+Expected Result - Открывается страница "М0еню".
 
