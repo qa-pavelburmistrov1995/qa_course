@@ -1,9 +1,0 @@
-Summary	- Не работает кнопка "Меню"
-Severity - Critical
-Priority - High
-PreConditions- На десктопе открыт браузер Google Chrome Canary Версия 89.0.4371.0 , ОС-Windows 8.1 .
-Steps to Reproduce- 1.Открыть страницу http://test.it-online-school.ru/ .
-                    2.Нажать на кнопку "Меню"в левой части экрана .	
-Result - Показывает ошибку Error 404.
-Expected Result - Открывается страница "М0еню".
-
