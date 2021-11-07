@@ -1,0 +1,58 @@
+
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir exem
+3) Зайти в папку -  cd exem
+4) Создать 3 папки - mkdir exem_1 exem_2 exem_3
+5) Зайти в любоую папку - cd exem_3
+6) Создать 5 файлов (3 txt, 2 json) -  touch File.txt-1 папка
+                                       touch File1.txt File2.txt-еще 2 папки
+                                       touch file.json file1.json
+7) Создать 3 папки - mkdir exem_4 exem_5 exem_6	
+8) Вывести список содержимого папки	- ls or ls -la
+9) Открыть любой txt файл -  vim  File1.txt
+10) написать туда что-нибудь, любой текст - vim File1.txt-->>пишем текст(что-бы нaчать редактировать -->Ins 
+                                                                          "1) The_first line
+                                                                           2) The second_line:" 
+11) сохранить и выйти - нажимаем Esc -->>:wq-->> Enter				   
+12) Выйти из папки на уровень выше cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку -  mv /c/Users/User/exem_3/File2.txt /c/Users/User/exem_2/File2.txt
+                                                                           mv /c/Users/User/exem_3/File1.txt /c/Users/User/exem_2/File1.txt
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку -  cp C:/Users/User/exem_3/file.json  C:/Users/User/exem_6/file.json
+                                                                           cp C:/Users/User/exem_3/file1.json  C:/Users/User/exem_6/file1.json
+
+
+15) Найти файл по имени - find - name file1.json
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает - grep first File1.txt
+17) вывести несколько первых строк из текстового файла -  head -1 File1.txt
+18) вывести несколько последних строк из текстового файла -  tail -1 File1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает - less File1.txt
+20) вывести дату и время - date
+
+*******
+1) Отправить http запрос на сервер - curl https://api.quarantine.country/api/v1/regions
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13 - создать новый файл vim Scr внести в него данные:
+
+#!/bin/bash
+
+mkdir scripts
+
+cd scripts
+
+mkdir scripts_1 scripts_2 scripts_3
+
+cd scripts_3
+
+touch scripts.txt scripts1.txt scripts2.txt
+
+touch scripts.json scripts1.json
+
+mkdir scripts_4 scripts_5 scripts_6	
+
+ls -la
+
+mv /c/Users/User/scripts_3/scripts.txt /c/Users/User/scripts_2/scripts2.txt
+
+mv /c/Users/User/scripts_3/scripts1.txt /c/Users/User/scripts_2/scripts1.txt
+								   
+сохранить Esc ->:wq Enter
+запустить скрипт ./Scr
